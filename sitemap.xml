@@ -9,6 +9,7 @@
 <url> <loc>https://orionjs.com/docs/basics</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/basics" /> </url>
 <url> <loc>https://orionjs.com/docs/cli</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/cli" /> </url>
 <url> <loc>https://orionjs.com/docs/collections</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/collections" /> </url>
+<url> <loc>https://orionjs.com/docs/deploying</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/deploying" /> </url>
 <url> <loc>https://orionjs.com/docs/files</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/files" /> </url>
 <url> <loc>https://orionjs.com/docs/graphql</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/graphql" /> </url>
 <url> <loc>https://orionjs.com/docs/http</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/http" /> </url>
