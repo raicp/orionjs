@@ -3,14 +3,15 @@
 <url> <loc>https://orionjs.com/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/en/help" /> </url>
 <url> <loc>https://orionjs.com/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/en/index" /> </url>
 <url> <loc>https://orionjs.com/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/en/users" /> </url>
-<url> <loc>https://orionjs.com/blog/2017/10/24/new-version-1.0.0</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://orionjs.com/blog/2017/09/26/adding-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://orionjs.com/blog/2017/09/25/testing-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://orionjs.com/blog/2017/04/10/blog-post-two</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://orionjs.com/blog/2016/03/11/blog-post</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://orionjs.com/docs/doc1</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/doc1" /> </url>
-<url> <loc>https://orionjs.com/docs/doc2</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/doc2" /> </url>
-<url> <loc>https://orionjs.com/docs/doc3</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/doc3" /> </url>
-<url> <loc>https://orionjs.com/docs/doc4</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/doc4" /> </url>
-<url> <loc>https://orionjs.com/docs/doc5</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/doc5" /> </url>
+<url> <loc>https://orionjs.com/blog/2018/08/23/hello-world</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://orionjs.com/docs/authentication</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/authentication" /> </url>
+<url> <loc>https://orionjs.com/docs/basics</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/basics" /> </url>
+<url> <loc>https://orionjs.com/docs/cli</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/cli" /> </url>
+<url> <loc>https://orionjs.com/docs/collections</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/collections" /> </url>
+<url> <loc>https://orionjs.com/docs/installation</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/installation" /> </url>
+<url> <loc>https://orionjs.com/docs/jobs</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/jobs" /> </url>
+<url> <loc>https://orionjs.com/docs/models</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/models" /> </url>
+<url> <loc>https://orionjs.com/docs/resolvers</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/resolvers" /> </url>
+<url> <loc>https://orionjs.com/docs/schema</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/schema" /> </url>
+<url> <loc>https://orionjs.com/docs/structure</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/structure" /> </url>
 </urlset>
