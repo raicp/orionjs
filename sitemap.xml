@@ -5,11 +5,16 @@
 <url> <loc>https://orionjs.com/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/en/users" /> </url>
 <url> <loc>https://orionjs.com/blog/2018/08/23/hello-world</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://orionjs.com/docs/authentication</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/authentication" /> </url>
+<url> <loc>https://orionjs.com/docs/autoform</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/autoform" /> </url>
 <url> <loc>https://orionjs.com/docs/basics</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/basics" /> </url>
 <url> <loc>https://orionjs.com/docs/cli</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/cli" /> </url>
 <url> <loc>https://orionjs.com/docs/collections</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/collections" /> </url>
+<url> <loc>https://orionjs.com/docs/files</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/files" /> </url>
+<url> <loc>https://orionjs.com/docs/graphql</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/graphql" /> </url>
+<url> <loc>https://orionjs.com/docs/http</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/http" /> </url>
 <url> <loc>https://orionjs.com/docs/installation</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/installation" /> </url>
 <url> <loc>https://orionjs.com/docs/jobs</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/jobs" /> </url>
+<url> <loc>https://orionjs.com/docs/mailing</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/mailing" /> </url>
 <url> <loc>https://orionjs.com/docs/models</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/models" /> </url>
 <url> <loc>https://orionjs.com/docs/resolvers</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/resolvers" /> </url>
 <url> <loc>https://orionjs.com/docs/schema</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/schema" /> </url>
