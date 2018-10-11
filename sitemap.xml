@@ -19,5 +19,6 @@
 <url> <loc>https://orionjs.com/docs/models</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/models" /> </url>
 <url> <loc>https://orionjs.com/docs/resolvers</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/resolvers" /> </url>
 <url> <loc>https://orionjs.com/docs/schema</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/schema" /> </url>
+<url> <loc>https://orionjs.com/docs/stripe</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/stripe" /> </url>
 <url> <loc>https://orionjs.com/docs/structure</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://orionjs.com/docs/structure" /> </url>
 </urlset>
