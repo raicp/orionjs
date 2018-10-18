@@ -46,7 +46,7 @@ start({job1, job2})
 <p>Jobs can be called at any moment and make changes in the database. Let's take for example the next resolver:</p>
 <pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> {resolver} <span class="hljs-keyword">from</span> <span class="hljs-string">'@orion-js/app'</span>
 <span class="hljs-keyword">import</span> Orders <span class="hljs-keyword">from</span> <span class="hljs-string">'app/collections/Orders'</span>
-<span class="hljs-keyword">import</span> {runJob} <span class="hljs-keyword">from</span> <span class="hljs-string">'@orion-js/jobs'</span>
+<span class="hljs-keyword">import</span> checkDeliveryFromOrder <span class="hljs-keyword">from</span> <span class="hljs-string">'app/jobs/checkDeliveryFromOrder'</span>
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> resolver({
   <span class="hljs-attr">params</span>: {
@@ -61,17 +61,17 @@ start({job1, job2})
     <span class="hljs-keyword">const</span> delivery = <span class="hljs-keyword">await</span> order.delivery()
     <span class="hljs-keyword">if</span> (delivery.status !== <span class="hljs-string">'completed'</span>) {
       <span class="hljs-keyword">const</span> oneDay = <span class="hljs-number">1000</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span>
-      runJob({<span class="hljs-attr">waitToRun</span>: oneDay, <span class="hljs-attr">job</span>: <span class="hljs-string">'checkDeliveryFromOrder'</span>, <span class="hljs-attr">params</span>: {orderId}})
+      checkDeliveryFromOrder({orderId}, {<span class="hljs-attr">waitToRun</span>: oneDay})
     }
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
   }
 })
 </code></pre>
 <p>The resolver checks if a delivery asociated to an order has been completed. Since is still in its way, it calls the job <code>checkDeliveryFromOrder</code> with a time period equal to a day. This means that it will be executed 24 hours from now.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> {runJob} <span class="hljs-keyword">from</span> <span class="hljs-string">'@orion-js/jobs'</span>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> {job} <span class="hljs-keyword">from</span> <span class="hljs-string">'@orion-js/jobs'</span>
 <span class="hljs-keyword">import</span> Orders <span class="hljs-keyword">from</span> <span class="hljs-string">'app/collections/Orders'</span>
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> job({
   <span class="hljs-attr">type</span>: <span class="hljs-string">'event'</span>,
   <span class="hljs-keyword">async</span> run({orderId}) {
     <span class="hljs-keyword">const</span> order = <span class="hljs-keyword">await</span> Orders.findOne(orderId)
@@ -80,10 +80,10 @@ start({job1, job2})
       <span class="hljs-keyword">await</span> order.update({<span class="hljs-attr">$set</span>: {<span class="hljs-attr">status</span>: <span class="hljs-string">'delivered'</span>}})
     } <span class="hljs-keyword">else</span> {
       <span class="hljs-keyword">const</span> threeDays = <span class="hljs-number">1000</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span> * <span class="hljs-number">3</span>
-      runJob({<span class="hljs-attr">waitToRun</span>: threeDays, <span class="hljs-attr">job</span>: <span class="hljs-string">'checkDeliveryFromOrder'</span>, <span class="hljs-attr">params</span>: {orderId}})
+      <span class="hljs-keyword">this</span>.runJob({orderId}, {<span class="hljs-attr">waitToRun</span>: threeDays})
     }
   }
-}
+})
 </code></pre>
 <p><code>checkDeliveryFromOrder</code> receives the <code>orderId</code> parameter, and it checks again if the delivery has been completed. If by now the delivery has been completed, it updates <code>order.status = 'delivered'</code>. At contrary, it runs the job again, now with a time expectancy of 3 days.</p>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/collections"><span class="arrow-prev">← </span><span>Previous</span></a><a class="docs-next button" href="/docs/authentication"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav docOnPageNav"><ul class="toc-headings"><li><a href="#structure-of-the-main-jobs-of-the-application">Structure of the main jobs of the application</a></li><li><a href="#example-of-the-jobs-directory-index">Example of the jobs directory index</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/logo-white.svg" alt="Orionjs" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/installation.html">Getting Started</a><a href="/docs/en/basics.html">Learn the basics</a><a href="/docs/en/schema.html">API Reference</a></div><div><h5>Support</h5><a href="http://stackoverflow.com/questions/tagged/orionjs" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://github.com/orionjs/orionjs/issues" target="_blank" rel="noreferrer noopener">Github issues</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/orionjs/orionjs" target="_blank" rel="noopener noreferrer">GitHub</a><a class="github-button" href="https://github.com/orionjs/orionjs" data-icon="octicon-star" data-count-href="/orionjs/orionjs/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018 Orionjs Team</section></footer></div></body></html>
