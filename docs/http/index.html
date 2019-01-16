@@ -45,7 +45,7 @@
 route(path, func)
 </code></pre>
 <ul>
-<li><code>path</code>: A string that compilant with <a href="https://github.com/pillarjs/path-to-regexp">path-to-regexp</a>.</li>
+<li><code>path</code>: A string that compilant with <a href="https://github.com/pillarjs/path-to-regexp">path-to-regexp</a>. To setup a route that responds when no other route is found, set <code>path</code> to <code>null</code>.</li>
 <li><code>func</code>: The function that will be executed when the route is visited. It must be a function, the result of this function will be the response.</li>
 </ul>
 <p>Function arguments:</p>
