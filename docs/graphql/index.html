@@ -67,7 +67,7 @@ startGraphQL({
 <li><code>resolvers</code>: An object with all the resolvers of your app. If you pass the option <code>private: true</code> when creating the resolver, it will be omitted (see <a href="https://orionjs.com/docs/resolvers"><code>Resolvers</code></a>).</li>
 <li><code>subscriptions</code>: An object containing all the subscriptions of your app.</li>
 <li><code>pubsub</code>: Only required if you use subscriptions. A pubsub implementation compatible with <a href="https://github.com/apollographql/graphql-subscriptions#pubsub-implementations">apollo-subscriptions</a>.</li>
-<li><code>useGraphiql</code>: A boolean to set up the graphiQL in-browser IDE for exploring GraphQL. Defaults to <code>true</code>.</li>
+<li><code>useGraphiql</code>: A boolean to set up the graphiQL in-browser IDE for exploring GraphQL. Defaults to <code>false</code>.</li>
 </ul>
 <p>By default, Orionjs provides this functionality in the <code>index</code> file of the <code>services/graphql</code> folder:</p>
 <pre><code class="hljs">server
