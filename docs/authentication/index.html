@@ -77,7 +77,7 @@ resolver({
   <span class="hljs-attr">returns</span>: <span class="hljs-built_in">String</span>,
   <span class="hljs-attr">mutation</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-comment">// Option 1: adding the parameter in the resolver</span>
-  requireTwoFactor: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">requireTwoFactor</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-keyword">async</span> resolve(params, viewer) {
     <span class="hljs-comment">// Option 2: call the requireTwoFactor function</span>
     <span class="hljs-keyword">await</span> requireTwoFactor(viewer) <span class="hljs-comment">// you must pass the viewer as to this function</span>
