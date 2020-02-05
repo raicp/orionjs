@@ -114,11 +114,11 @@
         /&gt;
         <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> this.refs.form.submit()}&gt;Register Movie<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
     )
   }
 }
-</span></code></pre>
+</code></pre>
 <ul>
 <li><code>mutation</code>: Name of the mutation.</li>
 <li><code>ref</code>: Reference of the Autoform inside the component. In this case, is used by the Button component.</li>
@@ -144,18 +144,18 @@
   render() {
     <span class="hljs-keyword">const</span> genre = <span class="hljs-string">'terror'</span>
     <span class="hljs-keyword">return</span> (
-      &lt;div&gt;
-        &lt;AutoForm mutation="insertMovie" ref="form" doc={{genre}} onSuccess={() =&gt; this.success()}&gt;
-          &lt;div className="label"&gt;Name:&lt;/div&gt;
-          &lt;Field fieldName="name" type={Text} /&gt;
-          &lt;div className="label"&gt;Genre:&lt;/div&gt;
-          &lt;Field fieldName="genre" type={Text} /&gt;
-          &lt;div className="label"&gt;Insert an optional description:&lt;/div&gt;
-          &lt;Field fieldName="description" type={Text} /&gt;
-        &lt;/AutoForm&gt;
-        &lt;br /&gt;
-        &lt;Button onClick={() =&gt; this.refs.form.submit()}&gt;Register Movie&lt;/Button&gt;
-      &lt;/div&gt;
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">AutoForm</span> <span class="hljs-attr">mutation</span>=<span class="hljs-string">"insertMovie"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"form"</span> <span class="hljs-attr">doc</span>=<span class="hljs-string">{{genre}}</span> <span class="hljs-attr">onSuccess</span>=<span class="hljs-string">{()</span> =&gt;</span> this.success()}&gt;
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"label"</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Field</span> <span class="hljs-attr">fieldName</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{Text}</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"label"</span>&gt;</span>Genre:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Field</span> <span class="hljs-attr">fieldName</span>=<span class="hljs-string">"genre"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{Text}</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"label"</span>&gt;</span>Insert an optional description:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Field</span> <span class="hljs-attr">fieldName</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{Text}</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">AutoForm</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> this.refs.form.submit()}&gt;Register Movie<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
     )
   }
 }
